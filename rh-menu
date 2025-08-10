@@ -173,7 +173,8 @@ while true; do
                 echo "   Or make it executable: chmod +x $script_name && sudo mv $script_name /usr/local/bin/"
             fi
         
-            read -p "Press Enter to continue..."
+            # commented for scripts that should exit immediately and return to menu
+            #read -p "Press Enter to continue..."
             ;;
 
         "2")
@@ -195,7 +196,8 @@ while true; do
                 echo "   Or make it executable: chmod +x $script_name && sudo mv $script_name /usr/local/bin/"
             fi
         
-            read -p "Press Enter to continue..."
+            # commented for scripts that should exit immediately and return to menu
+            #read -p "Press Enter to continue..."
             ;;
 
         "3")
@@ -216,8 +218,9 @@ while true; do
                 echo "💡 Make sure it's installed and in your PATH: which $script_name"
                 echo "   Or make it executable: chmod +x $script_name && sudo mv $script_name /usr/local/bin/"
             fi
-        
-            read -p "Press Enter to continue..."
+            
+            # commented for scripts that should exit immediately and return to menu
+            #read -p "Press Enter to continue..."
             ;;
 
           *)
