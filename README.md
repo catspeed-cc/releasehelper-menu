@@ -16,7 +16,7 @@ Appears to work more properly - I'm welcome. Your welcome.
 
 no other help
 
-~ mooleshacat
+~ mooleshacat 🍻
 
 P.S. This small dev release helper menu helped me find a few bugs in the menu's command execution for my dockerized projects.
 
