@@ -2,7 +2,7 @@
 An interactive custom release helper script for [sd-webui-forge-docker](https://github.com/catspeed-cc/sd-webui-forge-docker) and [sd-webui-reforge-docker](https://github.com/catspeed-cc/sd-webui-reforge-docker) (will only work with these without modifications)
 
 - run `git clone https://github.com/catspeed-cc/releasehelper-menu.git /path/to/where/you/want/rh-menu`
-- run `echo "export PATH=${PATH}:/path/to/where/you/put/rh-menu" | tee -a ~/.bashrc`
+- run `echo "export PATH=\${PATH}:/path/to/where/you/put/rh-menu" | tee -a ~/.bashrc`
 - run `rh-menu` from inide [sd-webui-forge-docker](https://github.com/catspeed-cc/sd-webui-forge-docker) or [sd-webui-reforge-docker](https://github.com/catspeed-cc/sd-webui-reforge-docker) repository
 
 It is now in your PATH / .bashrc
