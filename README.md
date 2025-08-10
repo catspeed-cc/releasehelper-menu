@@ -12,6 +12,8 @@ It is now in your PATH / .bashrc
 
 no other help
 
+P.S. this small dev menu helped me find a few bugs in the menu's for the dockerized projects I made. The fixes will be in the v1.1.3 compatibility version I am working on.
+
 ~ mooleshacat
 
 EOF
