@@ -147,7 +147,7 @@ while true; do
   confirm_continue            
             
   # Example action (uncomment to actually commit)
-  git add . && git commit -m "$commit_desc" -m "$commit_msg"
+  git commit -a -m "$commit_desc" -m "$commit_msg"
   echo "📤 Committed!"
 
   # Optional: confirm before continuing
