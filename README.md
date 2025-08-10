@@ -12,6 +12,8 @@ It is now in your PATH / .bashrc
 
 Appears to work more properly - I'm welcome. Your welcome.
 
+**_Thoughts:_** I could make a "dummy" fork >:) to make the releasehelper-menu work inside the releasehelper-menu repository too that would be _sweet_ 🍻
+
 no other help
 
 ~ mooleshacat
