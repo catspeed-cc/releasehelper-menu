@@ -159,52 +159,7 @@ while true; do
             echo "Docker build / push to Docker Hub..."
             echo "------------------------------------"
             script_name="release-build-docker.sh"
-        
-            if command -v "$script_name" &> /dev/null; then
-                sleep 1
-                if "$script_name"; then
-                    echo "✅ Script '$script_name' completed successfully."
-                else
-                    echo "❌ Script '$script_name' failed with exit code: $?"
-                fi
-            else
-                echo "🚫 Error: '$script_name' not found in PATH or not executable."
-                echo "💡 Make sure it's installed and in your PATH: which $script_name"
-                echo "   Or make it executable: chmod +x $script_name && sudo mv $script_name /usr/local/bin/"
-            fi
-        
-            # commented for scripts that should exit immediately and return to menu
-            #read -p "Press Enter to continue..."
-            ;;
-
-        "2")
-            echo
-            echo "Create sauces archive..."
-            echo "------------------------"
-            script_name="release-gen-sauces.sh"
-        
-            if command -v "$script_name" &> /dev/null; then
-                sleep 1
-                if "$script_name"; then
-                    echo "✅ Script '$script_name' completed successfully."
-                else
-                    echo "❌ Script '$script_name' failed with exit code: $?"
-                fi
-            else
-                echo "🚫 Error: '$script_name' not found in PATH or not executable."
-                echo "💡 Make sure it's installed and in your PATH: which $script_name"
-                echo "   Or make it executable: chmod +x $script_name && sudo mv $script_name /usr/local/bin/"
-            fi
-        
-            # commented for scripts that should exit immediately and return to menu
-            #read -p "Press Enter to continue..."
-            ;;
-
-        "3")
-            echo
-            echo "Git commit / push to GitHub..."
-            echo "----------------------------------------"
-            script_name="release-gh-push.sh"
+            exit_immediately=true
         
             if command -v "$script_name" &> /dev/null; then
                 sleep 1
@@ -219,8 +174,62 @@ while true; do
                 echo "   Or make it executable: chmod +x $script_name && sudo mv $script_name /usr/local/bin/"
             fi
             
-            # commented for scripts that should exit immediately and return to menu
-            #read -p "Press Enter to continue..."
+            # Pause unless: script succeeded AND exit_immediately is "true"
+            if ! { [[ "$script_succeeded" == "true" ]] && [[ "${exit_immediately:-true}" == "true" ]]; }; then
+                read -p "Press Enter to continue..."
+            fi
+            ;;
+
+        "2")
+            echo
+            echo "Create sauces archive..."
+            echo "------------------------"
+            script_name="release-gen-sauces.sh"
+            exit_immediately=true
+        
+            if command -v "$script_name" &> /dev/null; then
+                sleep 1
+                if "$script_name"; then
+                    echo "✅ Script '$script_name' completed successfully."
+                else
+                    echo "❌ Script '$script_name' failed with exit code: $?"
+                fi
+            else
+                echo "🚫 Error: '$script_name' not found in PATH or not executable."
+                echo "💡 Make sure it's installed and in your PATH: which $script_name"
+                echo "   Or make it executable: chmod +x $script_name && sudo mv $script_name /usr/local/bin/"
+            fi
+            
+            # Pause unless: script succeeded AND exit_immediately is "true"
+            if ! { [[ "$script_succeeded" == "true" ]] && [[ "${exit_immediately:-true}" == "true" ]]; }; then
+                read -p "Press Enter to continue..."
+            fi
+            ;;
+
+        "3")
+            echo
+            echo "Git commit / push to GitHub..."
+            echo "----------------------------------------"
+            script_name="release-gh-push.sh"
+            exit_immediately=true
+        
+            if command -v "$script_name" &> /dev/null; then
+                sleep 1
+                if "$script_name"; then
+                    echo "✅ Script '$script_name' completed successfully."
+                else
+                    echo "❌ Script '$script_name' failed with exit code: $?"
+                fi
+            else
+                echo "🚫 Error: '$script_name' not found in PATH or not executable."
+                echo "💡 Make sure it's installed and in your PATH: which $script_name"
+                echo "   Or make it executable: chmod +x $script_name && sudo mv $script_name /usr/local/bin/"
+            fi
+            
+            # Pause unless: script succeeded AND exit_immediately is "true"
+            if ! { [[ "$script_succeeded" == "true" ]] && [[ "${exit_immediately:-true}" == "true" ]]; }; then
+                read -p "Press Enter to continue..."
+            fi
             ;;
 
           *)
