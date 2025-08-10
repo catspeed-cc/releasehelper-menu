@@ -14,6 +14,7 @@ no other help
 
 ~ mooleshacat
 
-P.S. this small dev release helper menu helped me find a few bugs in the menu's for the dockerized projects I made. The fixes will be in the v1.1.3 compatibility version I am working on.
+P.S. This small dev release helper menu helped me find a few bugs in the menu's for the dockerized projects I made.
+     The fixes will be in the v1.1.3 compatibility version I am working on.
 
 EOF
