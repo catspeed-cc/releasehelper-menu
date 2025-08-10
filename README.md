@@ -14,7 +14,7 @@ no other help
 
 ~ mooleshacat
 
-P.S. This small dev release helper menu helped me find a few bugs in the menu's for the dockerized projects I made. \
+P.S. This small dev release helper menu helped me find a few bugs in the menu's command execution for the dockerized projects I made. \
 P.P.S. The fixes will be in the v1.1.3 compatibility version I am working on.
 
 EOF
