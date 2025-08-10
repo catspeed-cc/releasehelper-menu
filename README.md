@@ -17,6 +17,6 @@ no other help
 ~ mooleshacat
 
 P.S. This small dev release helper menu helped me find a few bugs in the menu's command execution for my dockerized projects. \
-P.P.S. The fixes will be in the v1.1.3 compatibility version I am working on to make both dockerized projects compatible.
+P.P.S. The fixes will be in the v1.1.3 compatibility version I am working on to make both dockerized projects compatible. I have a plan for this compatibility. I have already implemented fork detection which helped releasehelper-menu too :)
 
 EOF
