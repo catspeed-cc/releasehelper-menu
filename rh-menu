@@ -158,9 +158,9 @@ while true; do
             echo
             echo "Docker build / push to Docker Hub..."
             echo "------------------------------------"
-            script_name="${GIT_ROOT}/release-build-docker.sh"
+            script_name="release-build-docker.sh"
         
-            if [[ -x "$script_name" ]]; then
+            if command -v "$script_name" &> /dev/null; then
                 sleep 1
                 if "$script_name"; then
                     echo "✅ Script '$script_name' completed successfully."
@@ -168,8 +168,9 @@ while true; do
                     echo "❌ Script '$script_name' failed with exit code: $?"
                 fi
             else
-                echo "🚫 Error: '$script_name' not found or not executable."
-                echo "💡 Make sure it exists and has execute permissions: chmod +x $script_name"
+                echo "🚫 Error: '$script_name' not found in PATH or not executable."
+                echo "💡 Make sure it's installed and in your PATH: which $script_name"
+                echo "   Or make it executable: chmod +x $script_name && sudo mv $script_name /usr/local/bin/"
             fi
         
             read -p "Press Enter to continue..."
@@ -179,9 +180,9 @@ while true; do
             echo
             echo "Create sauces archive..."
             echo "------------------------"
-            script_name="${GIT_ROOT}/release-gen-sauces.sh"
+            script_name="release-gen-sauces.sh"
         
-            if [[ -x "$script_name" ]]; then
+            if command -v "$script_name" &> /dev/null; then
                 sleep 1
                 if "$script_name"; then
                     echo "✅ Script '$script_name' completed successfully."
@@ -189,8 +190,9 @@ while true; do
                     echo "❌ Script '$script_name' failed with exit code: $?"
                 fi
             else
-                echo "🚫 Error: '$script_name' not found or not executable."
-                echo "💡 Make sure it exists and has execute permissions: chmod +x $script_name"
+                echo "🚫 Error: '$script_name' not found in PATH or not executable."
+                echo "💡 Make sure it's installed and in your PATH: which $script_name"
+                echo "   Or make it executable: chmod +x $script_name && sudo mv $script_name /usr/local/bin/"
             fi
         
             read -p "Press Enter to continue..."
@@ -200,9 +202,9 @@ while true; do
             echo
             echo "Git commit / push to GitHub..."
             echo "----------------------------------------"
-            script_name="${GIT_ROOT}/release-gh-push.sh"
+            script_name="release-gh-push.sh"
         
-            if [[ -x "$script_name" ]]; then
+            if command -v "$script_name" &> /dev/null; then
                 sleep 1
                 if "$script_name"; then
                     echo "✅ Script '$script_name' completed successfully."
@@ -210,8 +212,9 @@ while true; do
                     echo "❌ Script '$script_name' failed with exit code: $?"
                 fi
             else
-                echo "🚫 Error: '$script_name' not found or not executable."
-                echo "💡 Make sure it exists and has execute permissions: chmod +x $script_name"
+                echo "🚫 Error: '$script_name' not found in PATH or not executable."
+                echo "💡 Make sure it's installed and in your PATH: which $script_name"
+                echo "   Or make it executable: chmod +x $script_name && sudo mv $script_name /usr/local/bin/"
             fi
         
             read -p "Press Enter to continue..."
