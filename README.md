@@ -3,7 +3,7 @@
 ## Notice:
 This repository has loose rules, no branch protections, no development branch, and commits are direct and frequent (or spammy) to master - because it is wholly my project and not intended to be included for release, only for developers to improve development/release workflow :)
 
-Example: you fork all the repositories (releasehelper-menu, docker-full-dir, subtree-docker-compose-lib, sd-webui-forge-docker, sd-webui-reforge-docker) and modify them to your fork. Also there is "no other help" - no support. No issue tickets.
+Example: you fork all the repositories (releasehelper-menu, docker-full-dir, subtree-docker-compose-lib AND sd-webui-forge-docker AND/OR sd-webui-reforge-docker) and modify them to your fork. Also there is "no other help" - no support. No issue tickets.
 
 ## Installation & Usage:
 
