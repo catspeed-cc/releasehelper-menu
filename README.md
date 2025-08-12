@@ -1,7 +1,9 @@
 # releasehelper-menu 
 
-## Notice:
-This repository has loose rules, no branch protections, no development branch, and commits are direct and frequent (or spammy) to master - because it is wholly my project and not intended to be included for release, only for developers of forks of my repositories to improve development/release workflow :) There will be no `current version` - the `current version` is whatever you `git clone` and `git pull`. If I am developing this menu at the time, pull frequently lmao I might break it.
+## Warning:
+This repository has loose rules, no branch protections, no development branch, and commits are direct and frequent (or spammy) to master - because it is wholly my project and not intended to be included for release, only for developers of forks of my repositories to improve development/release workflow :)
+
+There will be no `current version` - the `current version` is whatever you `git clone` and `git pull`. If I am developing this menu at the time, pull frequently lmao I might break it.
 
 Example: you fork all the repositories (releasehelper-menu, docker-full-dir, subtree-docker-compose-lib AND sd-webui-forge-docker AND/OR sd-webui-reforge-docker) and modify them to your fork.
 
