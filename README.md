@@ -1,7 +1,7 @@
 # releasehelper-menu 
 
 ## Warning:
-This repository has loose rules, no branch protections, no development branch, and commits are direct and frequent (or spammy) to master - because it is wholly my project and not intended to be included for release, only for mainly myself, but also developers of forks of my repositories to improve development/release workflow :)
+This repository has loose rules, no branch protections, no development branch, and commits are direct and frequent (or spammy) to master - because it is wholly my project and not intended to be included for release. This project is only for mainly myself, but also developers of forks of my repositories to improve development/release workflow :)
 
 There will be no `current version` - the `current version` is whatever you `git clone` and `git pull`. If I am developing this menu at the time, pull frequently lmao I might break it.
 
