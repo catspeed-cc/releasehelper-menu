@@ -7,6 +7,8 @@ Example: you fork all the repositories (releasehelper-menu, docker-full-dir, sub
 
 Also there is "no other help" - no support. No issue tickets. I will try and make the scripts as interactive as possible, adding the remotes should ask for a git remote url for example for each project.
 
+If you have forked and made changes, at this point, _you_ have become the developer, thus I cannot help you.
+
 ## Installation & Usage:
 
 An interactive custom release helper script for [sd-webui-forge-docker](https://github.com/catspeed-cc/sd-webui-forge-docker) and [sd-webui-reforge-docker](https://github.com/catspeed-cc/sd-webui-reforge-docker) (will only work with these without modifications)
