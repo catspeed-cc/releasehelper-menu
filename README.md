@@ -5,7 +5,7 @@ This repository has loose rules, no development branch, and commits are direct a
 
 Example: you fork all the repositories (releasehelper-menu, docker-full-dir, subtree-docker-compose-lib, sd-webui-forge-docker, sd-webui-reforge-docker) and modify them to your fork. Also there is "no other help" - no support. No issue tickets.
 
-## Installation & Usage
+## Installation & Usage:
 
 An interactive custom release helper script for [sd-webui-forge-docker](https://github.com/catspeed-cc/sd-webui-forge-docker) and [sd-webui-reforge-docker](https://github.com/catspeed-cc/sd-webui-reforge-docker) (will only work with these without modifications)
 
