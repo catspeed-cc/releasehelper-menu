@@ -5,7 +5,9 @@ This repository has loose rules, no branch protections, no development branch, a
 
 Example: you fork all the repositories (releasehelper-menu, docker-full-dir, subtree-docker-compose-lib AND sd-webui-forge-docker AND/OR sd-webui-reforge-docker) and modify them to your fork.
 
-Also there is "no other help" - no support. No issue tickets. I will try and make the scripts as interactive as possible, adding the remotes should ask for a git remote url for example for each project.
+# Support
+
+There is "no other help" - no support. No issue tickets. I will try and make the scripts as interactive as possible, adding the remotes should ask for a git remote url for example for each project.
 
 If you have cloned the releasehelper-menu or forked any repository and made changes, at this point, _you have become the developer,_ thus I cannot help you.
 
