@@ -5,7 +5,7 @@ This repository has loose rules, no branch protections, no development branch, a
 
 There will be no `current version` - the `current version` is whatever you `git clone` and `git pull`. If I am developing this menu at the time, pull frequently lmao I might break it.
 
-Example: you fork all the repositories (releasehelper-menu, docker-full-dir, subtree-docker-compose-lib AND sd-webui-forge-docker AND/OR sd-webui-reforge-docker) and modify them to your fork.
+Example: you fork all the repositories (releasehelper-menu, docker-full-dir, subtree-docker-compose-lib AND sd-webui-forge-docker AND/OR sd-webui-reforge-docker) and modify them to your fork. You leave a terminal/tab open with the menu script running - it is looped :) - so you can do operations, return to menu, do more operations, return ... ad infinitum!
 
 ## Support:
 
