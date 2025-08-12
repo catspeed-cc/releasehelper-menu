@@ -8,7 +8,7 @@ There will be no `current version` - the `current version` is whatever you `git 
 Example: you fork all the repositories (releasehelper-menu, docker-full-dir, subtree-docker-compose-lib AND sd-webui-forge-docker AND/OR sd-webui-reforge-docker) and modify them to your fork. You leave a terminal/tab open with the menu script running - it is looped :) So you can do operations, return to menu, do more operations, return ... until infinity!
 
 ## Status:
-Broken and I am done for the night. Turns out the items in the "warning" are ... bad choices for reasons (entire rh-menu script is down for my own use :P)
+Broken and I am done for the night. Turns out the items in the first paragraph of "warning" are ... bad choices for reasons (entire rh-menu script is down for my own use :P)
 
 ## Support:
 
