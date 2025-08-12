@@ -1,7 +1,7 @@
 # releasehelper-menu 
 
 ### Notice:
-This repository has loose rules, no development branch, and commits are direct and frequent (or spammy) to master - because it is wholly my project and not intended to be included for release, only for developers to improve development/release workflow :) Example: you fork all the repositories (releasehelper-menu, docker-full-dir, subtree-docker-compose-lib, sd-webui-forge-docker, sd-webui-reforge-docker) and modify them to your fork.
+This repository has loose rules, no development branch, and commits are direct and frequent (or spammy) to master - because it is wholly my project and not intended to be included for release, only for developers to improve development/release workflow :) Example: you fork all the repositories (releasehelper-menu, docker-full-dir, subtree-docker-compose-lib, sd-webui-forge-docker, sd-webui-reforge-docker) and modify them to your fork. Also there is "no other help" - no support. No issue tickets.
 
 An interactive custom release helper script for [sd-webui-forge-docker](https://github.com/catspeed-cc/sd-webui-forge-docker) and [sd-webui-reforge-docker](https://github.com/catspeed-cc/sd-webui-reforge-docker) (will only work with these without modifications)
 
